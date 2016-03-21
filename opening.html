@@ -13,6 +13,7 @@
  <script src="js/jquery-1.10.2.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+ 
 
 <title>Frame Dakwah</title>
  <style>
@@ -249,6 +250,7 @@ footer .glyphicon:hover {
   .carousel-inner > .item > a > img {
       width: 100%;
       margin:0 0px 0 0px;
+      height:725px;
       background-color:#FFFFFF;
   }
  h1	{
@@ -260,6 +262,21 @@ footer	{
 	background:#CCCCCC;
 	color:black;
 	font-size:20px;
+}
+#menusamping	{
+	width:20%;
+	float:left;
+	margin: 0 3x 0 3x;
+}
+@media only screen and(max-width: 400px)	{
+	h1 {
+	font-size:85%
+}
+}
+@media only screen and (max-width: 600px) {
+	h1 {
+	font-size:90%
+}
 }
 </style>
 </head>
@@ -274,7 +291,7 @@ footer	{
 			<span></span>
 		</div>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="opening.html">Home</a></li>
 				<li><a href="product.html">Product</a></li>
 				<li><a href="profil rumah ramah.html">Profil Rumah Ramah</a></li>
 				<li><a href="contact.html">Contact</a></li>
@@ -299,17 +316,19 @@ footer	{
 	</div>
 <!-- /first section -->
 <!-- second section - About -->
+
 <div id="about" class="pad-section">
-<div class="col-sm-6" style="left: 0px; top: 0px; width: 276px; height: 236px">
+<div id="menusamping" style="left: 0px; top: 0px; width: 276px; height: 236px">
         <img src="images/IMG_7131 (1).PNG" alt="" />
         	<div class="buttonposition">
       		<btn style="color:black;font-size:30px;"><a href="#home">Home</a></btn><br></br>
       		<btn style="color:black;font-size:30px;"><a href="#services">Continue</a></btn>
       		</div>
       </div>
+</div>
   <div class="container">
     <div class="row">		
-      <div class="col-sm-6 text-center">
+      <div class="col-sm-6 text-center" style="font-family:Bravelove;font-size:50px;">
         <h2>Tentang Frame Dakwah</h2>
         <p class="lead">Frame Dakwah menjual frame dengan design menarik yang berisi doa sehari-hari, hadits dan kutipan islami yang dapat digantung atau diletakan diatas meja.</p>
         <p class="lead">Harapan kami, pembeli dapat mengamalkan doa sehari-hari dan hadits-hadits tersebut menjadi sebuah kebiasaan, disamping dapat mempercantik rumah.</p>
@@ -355,8 +374,7 @@ footer	{
   </div>
     </div>
   </div>
-</div>
-<br></br><br></br><br></br>
+<br></br><br></br>
 <footer>
 Copyright &copy; CodingMums 
 </footer>
