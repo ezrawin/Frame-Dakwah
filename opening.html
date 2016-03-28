@@ -13,15 +13,21 @@
  <script src="js/jquery-1.10.2.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
- 
-
+<link rel=stylesheet type="text/css" href="css/big_project.css"/> 
+<!--bootstrap-->    
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/script-centered.js"></script>
+<!--<link rel=stylesheet type="text/js" href="js/big_project.js">-->
 <title>Frame Dakwah</title>
  <style>
   	
 body{
 	margin: 0px;
 	padding:0px;
-	font-family:"Vanilla Daisy Pro";
 	font-size:larger;
 }
 #sidebar{
@@ -137,7 +143,6 @@ body{
 	background: -o-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }
-
 .content h1 {
 	font-weight: 300;
 	font-size: 10em;
@@ -148,7 +153,6 @@ body{
 	text-shadow: 0 0 2px #fff;
 	position:relative;
 }
-
 .no-js .content h1 {
 	padding: 40px 1% 20px;
 }
@@ -243,7 +247,7 @@ footer .glyphicon:hover {
 	margin:0 3x 0 3x;
 }
 .buttonposition	{
-	margin:0 50px 10px 50px;
+	margin:0 60px 10px 50px;
 	color:black;
 }
 .carousel-inner > .item > img,
@@ -278,6 +282,148 @@ footer	{
 	font-size:90%
 }
 }
+#header {
+  position: relative;
+}
+
+
+/*Top Navigation Bar
+body {margin: 0;}
+
+.topnav{
+    z-index: 1;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #4ECDC4;
+    top: 0;
+    width: 100%;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #88d8b0;}
+
+ul.topnav li a.active {background-color: #FF6B6B;}
+
+ul.topnav li.right {float: right;}
+*/
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+ /*sticky top navbar 
+.fixed-nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 40px;
+  background-color: #00a087;
+}*/
+
+
+.topnav.fixedattop {
+  position: fixed; top: 0px;
+}
+
+
+/*website title
+body {
+    font-size:100%; 
+}
+.title{
+    margin-top: 0.5cm;
+    position:;
+    font-family: 'ABeeZee', sans-serif;
+    align-items: center;
+    float: none;
+    align-content: center;
+}
+/*Image Header
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+} */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+/*products grid*/
+#product{
+    margin-top: 1%;
+    position:absolute;
+}
+.block {
+    position:absolute;
+    background: #eee;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+}
+*{
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+/*product image*/
+.margin_img {
+    margin-bottom: 10%;
+    position: absolute;
+}
+/*button*/
+.beli{
+    color: #C44D58;
+}
+
 </style>
 </head>
 <body>
@@ -291,10 +437,10 @@ footer	{
 			<span></span>
 		</div>
 			<ul>
-				<li><a href="opening.html">Home</a></li>
-				<li><a href="product.html">Product</a></li>
-				<li><a href="profil rumah ramah.html">Profil Rumah Ramah</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li style="font-family:'Rivina TC Brush';"><a href="#about">Home</a></li>
+				<li style="font-family:'Rivina TC Brush';"><a href="#product">Product</a></li>
+				<li style="font-family:'Rivina TC Brush';"><a href="profil rumah ramah.html">Profil Rumah Ramah</a></li>
+				<li style="font-family:'Rivina TC Brush';"><a href="contact.html">Contact</a></li>
 			</ul>
 	</div>
 	<div class="bb-custom-wrapper">
@@ -302,10 +448,10 @@ footer	{
 					<div class="bb-item" id="item1">
 						<div class="content">										
 							<div id="imagebackground">	
-								<img alt="" src="images/f27c6507d7c8ee4afcef3422629bafc9.jpg" width="90%"/> 
+								<img alt="" src="../../FONT/PKF4.png" width="60%" height="60%"/> 
 								<div id="textbackground">
-								<h1 style="color:#FFFFFF;font-size:200px;border:thin;letter-spacing:10px;"><span>Frame Dakwah</span></h1>						
-								<a href="#about" class="btn btn-default btn-lg">Continue</a> 
+								<h1 style="color:black; font-family:'Cute Baby Long';font-size:280px;float:inherit;letter-spacing:normal;"><span>Frame Dakwah</span></h1>						
+								<!--<a href="#about" class="btn btn-default btn-lg">Continue</a>--> 
 								</div>
 							</div>						
 						</div>					
@@ -321,14 +467,13 @@ footer	{
 <div id="menusamping" style="left: 0px; top: 0px; width: 276px; height: 236px">
         <img src="images/IMG_7131 (1).PNG" alt="" />
         	<div class="buttonposition">
-      		<btn style="color:black;font-size:30px;"><a href="#home">Home</a></btn><br></br>
-      		<btn style="color:black;font-size:30px;"><a href="#services">Continue</a></btn>
+      		<btn style="color:black;font-size:30px; font-family:'Rivina TC Brush';"><a href="#product">Continue</a></btn>
       		</div>
       </div>
 </div>
   <div class="container">
     <div class="row">		
-      <div class="col-sm-6 text-center" style="font-family:Bravelove;font-size:50px;">
+      <div class="col-sm-6 text-center" style="font-family:'Rivina TC Brush';font-size:90px;">
         <h2>Tentang Frame Dakwah</h2>
         <p class="lead">Frame Dakwah menjual frame dengan design menarik yang berisi doa sehari-hari, hadits dan kutipan islami yang dapat digantung atau diletakan diatas meja.</p>
         <p class="lead">Harapan kami, pembeli dapat mengamalkan doa sehari-hari dan hadits-hadits tersebut menjadi sebuah kebiasaan, disamping dapat mempercantik rumah.</p>
@@ -374,86 +519,400 @@ footer	{
   </div>
     </div>
   </div>
-<br></br><br></br>
-<footer>
-Copyright &copy; CodingMums 
-</footer>
+<br></br><br></br><br></br>
 <!-- /second section -->
-<!-- third section - Services -->
-<div id="services" class="pad-section">
-  <div class="container">
-    <h2 class="text-center">Our Services</h2> <hr />
-    <div class="row text-center">
-      <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-cloud"> </i>
-        <h4>Service 1</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-      </div>
-      <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-leaf"> </i>
-        <h4>Service 2</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-      </div>
-      <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-phone-alt"> </i>
-        <h4>Service 3</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-      </div>
-      <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-bullhorn"> </i>
-        <h4>Service 4</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!-- /third section -->
-<!-- fourth section - Information -->
-<div id="information" class="pad-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2 class="panel-title">Additional information</h2>
-          </div>
-          <div class="panel-body lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2 class="panel-title">Additional information</h2>
-          </div>
-          <div class="panel-body lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<body onload="setupBlocks();">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>    
+    
+<div id="product"> 
+    
+<div class="block">    
+<img src="../../FRAME DAKWAH/frame 1.jpg" height="300px"/>
+    <p></p>
+<p>Doa Masuk Kamar Mandi</p>
+<p><b>Ukuran 20x25cm : Rp.90.000</b> </p>
+<p></p>
+<button class= "beli"><i class="fa fa-shopping-cart"></i>Buy</button>
+<button><i class="fa fa-heart"></i>Like</button>
+<button><i class="fa fa-share"></i>Share</button>
 </div>
+    
+<div class="block">    
+<img src="images/frame 2.jpg" height="300px"/>
+    <p></p>
+    <p>Doa Sesudah Wudhu</p>
+<p><b>Ukuran 20x25cm : Rp.90.000</b> </p>
+    <p></p>
+<button class="beli"><i class="fa fa-shopping-cart"></i> Buy</button>
+<button><i class="fa fa-heart"></i> Like</button>
+<button><i class="fa fa-share"></i> Share</button>
+</div>
+
+<div class="block"> 
+<img src="../../FRAME DAKWAH/frame 7.jpg" height="300px"/>
+    <p></p>
+    <p>Doa keluar Rumah</p>
+<p><b>Ukuran 20x25cm : Rp.90.000</b> </p>
+    <p></p>
+<button class= "beli"><i class="fa fa-shopping-cart"></i> Buy</button>
+<button><i class="fa fa-heart"></i> Like</button>
+<button><i class="fa fa-share"></i> Share</button>
+</div>
+ 
+<div class="block">    
+<img src="images/frame 10 20x25.jpg" height="300px"/>
+    <p></p>
+    <p>Doa Ketetapan Iman</p>
+<p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button><i class="fa fa-heart"></i> Like</button>
+<button><i class="fa fa-share"></i> Share</button>
+</div>    
+    
+<div class="block">    
+<img src="images/frame kecil 1.jpg" height="300px"/>
+    <p></p>
+    <p>Doa Sebelum Bekerja</p>
+<p><b>Ukuran 13x18 cm : Rp.75.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button><i class="fa fa-heart"></i> Like</button>
+<button><i class="fa fa-share"></i> Share</button>
+</div> 
+
+<div class="block">    
+<img src="images/frame kecil 2b.jpg" height="300px"/>
+    <p></p>
+    <p>Doa Penambah Ilmu, Amal dan Rizki yang Berkah</p>
+<p><b>Ukuran 13x18 cm : Rp.75.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button><i class="fa fa-heart"></i> Like</button>
+<button><i class="fa fa-share"></i> Share</button>
+</div>
+
+<div class="block">    
+<img src="images/IMG_8138.JPG" height="300px" alt="baju anak murah"/>
+    <p></p>
+    <p>Bismillah</p>
+<p><b>Ukuran 20x25cm : Rp.90.000 </b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button><i class="fa fa-heart"></i> Like</button>
+<button><i class="fa fa-share"></i> Share</button>
+</div>
+    
+<div class="block">    
+<img src="images/4601a0bf7bad99f2c53cf1e60fef6b7c.jpg" height="300px"/>
+    <p></p>
+    <p>Q.S. Al Isra</p>
+<p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i>Buy</button>
+<button><i class="fa fa-heart"></i> Like</button>
+<button><i class="fa fa-share"></i> Share</button>
+</div>
+
+<div class="block">    
+<img src="images/63783be903778d285bcebf0433a35c61.jpg" height="300px"/>
+    <p></p>
+    <p>Q.S. Ibrahim ayat 7</p>
+<p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button><i class="fa fa-heart"></i> Like</button>
+<button><i class="fa fa-share"></i> Share</button>
+</div>
+ 
+<div class="block">    
+<img src="images/bb1eb528a7e4b2100ca570417b063e86.jpg" height="300px"/>
+    <p></p>
+    <p>Q.S. Al Mu'min</p>
+<p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button><i class="fa fa-heart"></i> Like</button>
+<button><i class="fa fa-share"></i> Share</button>
+</div>    
+    
+<div class="block">    
+<img src="images/ead7d4c25ef182f3e21f831078999850.jpg" height="300px"/>
+    <p></p>
+    <p>Q.S. Al Qasas</p>
+<p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button><i class="fa fa-heart"></i> Share</button>
+<button><i class="fa fa-share"></i> Like</button>
+</div> 
+
+<div class="block">    
+<img src="" height="300px"/>
+    <p></p>
+    <p>Tweedy Bunny Hat</p>
+<p><b> Rp 49.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>
+  
+<div class="block">    
+<img src="img/14.png" height="60%">
+    <p></p>
+    <p>Bonjour Petite Sweat Shirt</p>
+<p><b> Rp 99.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>    
+    
+<div class="block">    
+<img src="img/15.jpeg" height="60%">
+    <p></p>
+    <p>Mineey Sweater</p>
+<p><b> Rp 69.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>  
+    
+<div class="block">    
+<img src="img/15.jpg" height="60%">
+    <p></p>
+    <p>Buneey Sweater</p>
+<p><b> Rp 69.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>     
+
+<div class="block">    
+<img src="img/16.jpg" height="60%">
+    <p></p>
+    <p>Floral Pants</p>
+<p><b> Rp 39.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>  
+    
+<div class="block">    
+<img src="img/17.jpg" height="60%">
+    <p></p>
+    <p>Lace Me Up</p>
+<p><b> Rp 79.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+
+<div class="block">    
+<img src="img/18.jpg" height="60%">
+    <p></p>
+    <p>Your Kingdom Dress</p>
+<p><b> Rp 69.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+    
+<div class="block">    
+<img src="img/19.jpg" height="60%">
+    <p></p>
+    <p>It's Nice, Overall</p>
+<p><b> Rp 65.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+    
+<div class="block">    
+<img src="img/20.jpg" height="60%">
+    <p></p>
+    <p>Pinky Promise Shirt</p>
+<p><b> Rp 39.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>    
+    
+<div class="block">    
+<img src="img/21.jpg" height="60%">
+    <p></p>
+    <p>Ooh Lala Shoes</p>
+<p><b> Rp 89.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+
+<div class="block">    
+<img src="img/22.jpg" height="60%">
+    <p></p>
+    <p>As White As Snow Dress</p>
+<p><b> Rp 89.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+
+<div class="block">    
+<img src="img/23.jpg" height="60%">
+    <p></p>
+    <p>My Jumpsuit Can Fly</p>
+<p><b> Rp 59.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+    
+<div class="block">    
+<img src="img/24.jpg" height="60%">
+    <p></p>
+    <p>Roses Shoes</p>
+<p><b> Rp 79.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>  
+    
+<div class="block">    
+<img src="img/25.png" height="60%">
+    <p></p>
+    <p>Pirate T-Shirt</p>
+<p><b> Rp 49.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+
+<div class="block">    
+<img src="img/26.jpg" height="60%">
+    <p></p>
+    <p>Skull Sweater</p>
+<p><b> Rp 59.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+    
+<div class="block">    
+<img src="img/27.jpg" height="60%">
+    <p></p>
+    <p>Candy Dress</p>
+<p><b> Rp 65.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+    
+<div class="block">    
+<img src="img/28.jpg" height="60%">
+    <p></p>
+    <p>Swirl Yellow Dress</p>
+<p><b> Rp 75.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+
+<div class="block">    
+<img src="img/29.jpg" height="60%">
+    <p></p>
+    <p>I Heart T-shirt</p>
+<p><b> Rp 49.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+    
+<div class="block">    
+<img src="img/30.jpg" height="60%">
+    <p></p>
+    <p>JumanJEANS</p>
+<p><b> Rp 72.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+    
+<div class="block">    
+<img src="img/31.jpg" height="60%">
+    <p></p>
+    <p>Red Red Dress</p>
+<p><b> Rp 79.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+    
+<div class="block">    
+<img src="img/32.jpg" height="60%">
+    <p></p>
+    <p>Dress Full of Bow</p>
+<p><b> Rp 52.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>     
+    
+<div class="block">    
+<img src="img/34.jpg" height="60%">
+    <p></p>
+    <p>Mini Me Dress</p>
+<p><b> Rp 75.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>  
+    
+<div class="block">    
+<img src="img/35.jpg" height="60%">
+    <p></p>
+    <p>Flowery Dress</p>
+<p><b> Rp 59.000</b> </p>
+    <p></p>
+<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button><i class="fa fa-heart"></i> Suka</button>
+<button><i class="fa fa-share"></i> Bagikan</button>
+</div>      
+             
+</div>  <!--setupBlocks function end-->      
+
+
+<!-- fourth section - Information -->
 <!-- /fourth section -->
 <!-- fifth section -->
-<div id="services" class="pad-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <h3>Parallax scrolling effect is in action</h3>
-        <h4>The next is the address on Google maps</h4>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- /fifth section -->
-<footer>
-Copyright &copy; CodingMums 
-</footer>
+
 </body>	
 
-
+</body>
 <script>
 
 var a = true;
@@ -505,7 +964,63 @@ $(document).ready(function(){
         $("#myCarousel").carousel("next");
     });
 });
+/*jquery grid*/
+var colCount = 0;
+var colWidth = 314;
+var margin = 10;
+var spaceLeft = 20;
+var windowWidth = 1200;
+var blocks = [];
 
-</script>
+$(function(){
+    $(window).resize(setupBlocks);
+});  
 
+function setupBlocks() {
+	windowWidth = $(window).width();
+	blocks = [];
+
+	// Calculate the margin so the blocks are evenly spaced within the window
+	colCount = Math.floor(windowWidth/(colWidth+margin*2));
+	spaceLeft = (windowWidth - ((colWidth*colCount)+(margin*(colCount-1)))) / 2;
+	console.log(spaceLeft);
+	
+	for(var i=0;i<colCount;i++){
+		blocks.push(margin);
+	}
+	positionBlocks();
+}
+
+function positionBlocks() {
+	$('.block').each(function(i){
+		var min = Array.min(blocks);
+		var index = $.inArray(min, blocks);
+		var leftPos = margin+(index*(colWidth+margin));
+		$(this).css({
+			'left':(leftPos+spaceLeft)+'px',
+			'top':min+'px'
+		});
+		blocks[index] = min+$(this).outerHeight()+margin;
+	});	
+}
+
+// Function to get the Min value in Array
+Array.min = function(array) {
+    return Math.min.apply(Math, array);
+};
+
+/*sticky navbar*/
+$(document).scroll(function() {
+  var documentScrollTop = $(document).scrollTop();
+  if (documentScrollTop > $('#header').height()) {
+    $('.topnav').addClass('fixedattop');
+    var shiftContent = $('.topnav').height();
+    $('#content').css('margin-top', shiftContent + 'px');
+  }
+  else if ($('.topnav').hasClass('fixedattop')) {
+    $('.topnav').removeClass('fixedattop');
+    $('#product').css('margin-top', '0px');
+  }
+});  
+</script>  
 </html>
