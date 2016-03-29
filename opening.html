@@ -15,7 +15,7 @@
   <script src="js/main.js"></script>
 <link rel=stylesheet type="text/css" href="css/big_project.css"/> 
 <!--bootstrap-->    
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="bootstrap.min.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     
@@ -107,7 +107,6 @@ body{
 .menu-button:hover {
 	background:black;
 }
-
 .bb-custom-wrapper nav span:last-child {
 	left: 40px;
 }
@@ -285,117 +284,13 @@ footer	{
 #header {
   position: relative;
 }
-
-
-/*Top Navigation Bar
-body {margin: 0;}
-
-.topnav{
-    z-index: 1;
-}
-
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-    background-color: #4ECDC4;
-    top: 0;
-    width: 100%;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #88d8b0;}
-
-ul.topnav li a.active {background-color: #FF6B6B;}
-
-ul.topnav li.right {float: right;}
-*/
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
 }
-
- /*sticky top navbar 
-.fixed-nav-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 40px;
-  background-color: #00a087;
-}*/
-
-
 .topnav.fixedattop {
   position: fixed; top: 0px;
 }
-
-
-/*website title
-body {
-    font-size:100%; 
-}
-.title{
-    margin-top: 0.5cm;
-    position:;
-    font-family: 'ABeeZee', sans-serif;
-    align-items: center;
-    float: none;
-    align-content: center;
-}
-/*Image Header
-* {
-    box-sizing: border-box;
-}
-img {
-    width: 100%;
-    height: auto;
-}
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    width: 100%;
-} 
-@media only screen and (min-width: 600px) {
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
-/*products grid*/
 #product{
     margin-top: 1%;
     position:absolute;
@@ -424,7 +319,11 @@ img {
 .beli{
     color: #C44D58;
 }
-
+.logo {
+	position:fixed;
+	float:left;
+	height:20%;
+}
 </style>
 </head>
 <body>
@@ -520,16 +419,14 @@ img {
 <!-- /third section -->
 <body onload="setupBlocks();">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>    
-    
 <div id="product"> 
-    
 <div class="block" class="margin_img">    
 <img src="../../FRAME DAKWAH/frame 1.jpg" height="300px"/>
     <p></p>
 <p>Doa Masuk Kamar Mandi</p>
 <p><b>Ukuran 20x25cm : Rp.90.000</b> </p>
 <p></p>
-<button class= "beli"><i class="fa fa-shopping-cart"></i>Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i>Like</button>
 <button><i class="fa fa-share"></i>Share</button>
 </div>
@@ -540,7 +437,7 @@ img {
     <p>Doa Sesudah Wudhu</p>
 <p><b>Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button class="beli"><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>
@@ -551,7 +448,7 @@ img {
     <p>Doa keluar Rumah</p>
 <p><b>Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button class= "beli"><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>
@@ -562,7 +459,7 @@ img {
     <p>Doa Ketetapan Iman</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>    
@@ -573,7 +470,7 @@ img {
     <p>Doa Sebelum Bekerja</p>
 <p><b>Ukuran 13x18 cm : Rp.75.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div> 
@@ -584,7 +481,7 @@ img {
     <p>Doa Penambah Ilmu, Amal dan Rizki yang Berkah</p>
 <p><b>Ukuran 13x18 cm : Rp.75.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>
@@ -595,7 +492,7 @@ img {
     <p>Bismillah</p>
 <p><b>Ukuran 20x25cm : Rp.90.000 </b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>
@@ -606,7 +503,7 @@ img {
     <p>Q.S. Al Isra</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i>Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>
@@ -617,7 +514,7 @@ img {
     <p>Q.S. Ibrahim ayat 7</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>
@@ -628,7 +525,7 @@ img {
     <p>Q.S. Al Mu'min</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>    
@@ -639,7 +536,7 @@ img {
     <p>Q.S. Al Qasas</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Share</button>
 <button><i class="fa fa-share"></i> Like</button>
 </div> 
@@ -650,7 +547,7 @@ img {
     <p>Love Yourself</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>
@@ -661,7 +558,7 @@ img {
     <p>Al Fatihah</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>    
@@ -672,7 +569,7 @@ img {
     <p>Q.S. Al Baqarah</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>  
@@ -683,7 +580,7 @@ img {
     <p>Don't be Sad</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>     
@@ -693,7 +590,7 @@ img {
     <p>Q.S. Ar Rum Ayat 21</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>  
@@ -704,18 +601,18 @@ img {
     <p>Cure For Ignorance</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Beli</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Suka</button>
 <button><i class="fa fa-share"></i> Bagikan</button>
 </div>      
 
 <div class="block">    
-<img src="images/allah is enough.jpg" height="250px">
+<img src="images/allah is enough.jpg" height="250px"/>
     <p></p>
     <p>Allah is Enough</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>      
@@ -726,7 +623,7 @@ img {
     <p>Q.S. Al Hijr Ayat 7</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
 <button><i class="fa fa-heart"></i> Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>      
@@ -737,19 +634,54 @@ img {
     <p>Doa Orang Tua</p>
 <p><b> Ukuran 20x25cm : Rp.90.000</b> </p>
     <p></p>
-<button><i class="fa fa-shopping-cart"></i> Buy</button>
-<button><i class="fa fa-heart"></i> Like</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy</button>
+<button type="button" class="btn btn-info btn-like" data-toggle="modal" data-target="#myModal">Like</button>
 <button><i class="fa fa-share"></i> Share</button>
 </div>    
 </div>             
  <!--setupBlocks function end-->      
+<!-- Trigger the modal with a button -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">LET'S SHOP</h4>
+      </div>
+      <div class="modal-body">
+        <div align="center">
+	<form>
+		<table>
+			<tr>
+				<td class="auto-style2">Quantity	:</td>
+				<td><input type="text" class="auto-style2"/></td>
+				<td class="auto-style2">pcs</td>
+			</tr>	
+			<tr>	
+				<td class="auto-style2">Email	:</td>
+				<td><input type="text" class="auto-style2"/></td>
+			</tr>
+			<tr>
+				<td><button class="auto-style2">Buy and Exit</button></td>
+				<td><button class="auto-style2">Save to Cart</button></td>
+			</tr>
+		</table>
+	</form>
+	</div>
 
-
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- fourth section - Information -->
 <!-- /fourth section -->
 <!-- fifth section -->
 <!-- /fifth section -->
-
 </body>	
 
 </body>
