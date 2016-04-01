@@ -64,7 +64,7 @@ body{
 }
 #imagebackground #textbackground {
     position:absolute;
-    top:100px; /* in conjunction with left property, decides the text position */
+    top:100px; /*in conjunction with left property, decides the text position */ 
     left:500px;
     width:800px; /* optional, though better have one */
 }
@@ -129,7 +129,7 @@ body{
 	background: -o-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }
-.content h1 {
+/*.content h1 {
 	font-weight: 300;
 	font-size: 10em;
 	padding: 0 0 10px;
@@ -138,7 +138,7 @@ body{
 	text-align:center;
 	text-shadow: 0 0 2px #fff;
 	position:relative;
-}
+} */
 .no-js .content h1 {
 	padding: 40px 1% 20px;
 }
@@ -164,7 +164,7 @@ body{
 .pad-section img {
   width: 100%;
 }
-/* vertical-centered text */
+/* vertical-centered text*/
 .text-vcenter {
   display: table-cell;
   text-align: center;
@@ -174,8 +174,8 @@ body{
   font-size: 4.5em;
   font-weight: 700;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; 
+} 
 /* additional sections */
 #home {
   background: url(../images/home.jpg) no-repeat center center fixed; 
@@ -243,11 +243,6 @@ footer .glyphicon:hover {
       height:725px;
       background-color:#FFFFFF;
   }
- h1	{
-	color:#FFFFFF;
-	float:right;
-	margin:0 0 0 50%;
-}
 footer	{
 	background:#CCCCCC;
 	color:black;
@@ -336,7 +331,7 @@ footer	{
 							<div id="imagebackground">	
 								<img alt="" src="../../FONT/PKF4.png" width="60%" height="60%"/> 
 								<div id="textbackground">
-								<h1 style="color:black; font-family:'Cute Baby Long';font-size:280px;float:inherit;letter-spacing:normal;"><span>Frame Dakwah</span></h1>						
+								<h1 style="color:black; font-family:'Cute Baby Long';font-size:280px;float:inherit;"><span>Frame Dakwah</span></h1>						
 								</div>
 							</div>						
 						</div>					
@@ -800,18 +795,5 @@ Array.min = function(array) {
     return Math.min.apply(Math, array);
 };
 
-/*sticky navbar
-$(document).scroll(function() {
-  var documentScrollTop = $(document).scrollTop();
-  if (documentScrollTop > $('#header').height()) {
-    $('.topnav').addClass('fixedattop');
-    var shiftContent = $('.topnav').height();
-    $('#content').css('margin-top', shiftContent + 'px');
-  }
-  else if ($('.topnav').hasClass('fixedattop')) {
-    $('.topnav').removeClass('fixedattop');
-    $('#product').css('margin-top', '0px');
-  }
-});  */
 </script>  
 </html>
